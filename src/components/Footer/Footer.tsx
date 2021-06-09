@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Button from '../common/Button';
 import { CSS_MEDIA_QUERY } from '../../theme/consts';
 import { useMediaQuery } from '../../helpers/customHooks';
@@ -42,22 +42,29 @@ const Footer: React.FC = () => {
     <FooterWrapper>
       <ContactButtonsWrapper>
         <Button
+          iconName={faPhone}
+          href='tel:+5511957980599'
+          type='contact'
+          ariaLabel='Telefone'
+          size={buttonSize}
+        />
+        <Button
           iconName={faWhatsapp}
-          href='tel:+5511999999999'
+          href='https://api.whatsapp.com/send?phone=5511957980599'
           type='contact'
           ariaLabel='Whatsapp'
           size={buttonSize}
         />
         <Button
           iconName={faInstagram}
-          href='insta da soraya'
+          href='https://www.instagram.com/soraya.oliveirapsi/'
           type='contact'
           ariaLabel='Instagram'
           size={buttonSize}
         />
         <Button
           iconName={faEnvelope}
-          href='mailto:emaildasoraya'
+          href='mailto:sooliveira2009@gmail.com'
           type='contact'
           ariaLabel='E-mail'
           size={buttonSize}
