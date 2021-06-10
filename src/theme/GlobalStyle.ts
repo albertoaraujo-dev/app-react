@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   html {
@@ -35,4 +35,25 @@ export default createGlobalStyle`
   button, a {
     cursor: pointer;
   }
-`
+
+	/* Scroll-bar Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4f3b78 #c4bbf0;
+}
+
+/* Scroll-bar Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #c4bbf0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4f3b78;
+  border-radius: 20px;
+  
+}
+`;

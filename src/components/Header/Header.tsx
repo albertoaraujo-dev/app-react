@@ -12,13 +12,13 @@ const Header: React.FC = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
+  //asas
   return (
     <StyledHeader>
       <Navbar toggleSidebar={toggleSidebar} />
       {isTablet && isSidebarOpen && <Sidebar toggleSidebar={toggleSidebar} />}
       <StyledBanner>
-        <StyledBannerHeading>Soraya Oliveira CRP 05/22222</StyledBannerHeading>
+        <StyledBannerHeading>Soraya Oliveira CRP:05/22222</StyledBannerHeading>
       </StyledBanner>
     </StyledHeader>
   );
