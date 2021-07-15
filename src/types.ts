@@ -1,23 +1,23 @@
-import { THEME_DARK_MODE, THEME_LIGHT_MODE } from "./theme/consts"
-import { Tech } from "./consts"
+import { THEME_DARK_MODE, THEME_LIGHT_MODE } from './theme/consts';
+import { Tech } from './consts';
 
-export type ThemeType = typeof THEME_DARK_MODE | typeof THEME_LIGHT_MODE
+export type ThemeType = typeof THEME_DARK_MODE | typeof THEME_LIGHT_MODE;
 
 type SkillList = {
-  name: string
-  level?: string
-}
+  name: string;
+  level?: string;
+};
 
 export type SkillType = {
-  title: string
-  list: string
-}
+  title: string;
+  list: string;
+};
 
 export type ProjectType = {
-  name: string
-  img: string
-  urlWeb: string
-  urlCode: string
-  description: string
-  tech: Tech[]
-}
+  name: string;
+  img: string;
+  urlWeb: string;
+  urlCode: string;
+  description: string;
+  tech: Tech[];
+};

@@ -1,11 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import SectionLayout from "../common/SectionLayout"
-import SkillCard from "./SkillCard"
-import type { SkillType } from "../../types"
-import { CSS_MEDIA_QUERY } from "../../theme/consts"
-import { Section } from "../../consts"
-import { skills } from "../../data/data"
+import React from 'react';
+import styled from 'styled-components';
+import SectionLayout from '../common/SectionLayout';
+import SkillCard from './SkillCard';
+import type { SkillType } from '../../types';
+import { CSS_MEDIA_QUERY } from '../../theme/consts';
+import { Section } from '../../consts';
+import { skills } from '../../data/data';
 
 const SkillsWrapper = styled.div`
   display: flex;
@@ -20,16 +20,16 @@ const SkillsWrapper = styled.div`
       margin: 20px;
     }
   }
-`
+`;
 
 const Skills: React.FC = () => (
-  <SectionLayout id={Section.Skills} title="Especialidades">
+  <SectionLayout id={Section.Skills} title='Especialidades'>
     <SkillsWrapper>
       {skills.map((skill: SkillType) => (
         <SkillCard key={skill.title} {...skill} />
       ))}
     </SkillsWrapper>
   </SectionLayout>
-)
+);
 
-export default Skills
+export default Skills;

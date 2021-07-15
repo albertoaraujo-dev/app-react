@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import styled, { css, keyframes } from "styled-components"
-import { NAVBAR_HEIGHT } from "../../consts"
-import { ThemeType } from "../../types"
-import { CSS_MEDIA_QUERY } from "../../theme/consts"
+import styled, { css, keyframes } from 'styled-components';
+import { NAVBAR_HEIGHT } from '../../consts';
+import { ThemeType } from '../../types';
+import { CSS_MEDIA_QUERY } from '../../theme/consts';
 
 type StyledProps = {
-  theme: ThemeType
-}
+  theme: ThemeType;
+};
 
 type StyledPropsWithIsScrolledOverHeader = {
-  theme: ThemeType
-  isScrolledOverHeader: boolean
-}
+  theme: ThemeType;
+  isScrolledOverHeader: boolean;
+};
 
 const moveSidebarDesktop = keyframes`
     0% {
@@ -20,7 +20,7 @@ const moveSidebarDesktop = keyframes`
     100% {
         width: 100%;
     }
-`
+`;
 
 const moveSidebarMobile = keyframes`
     0% {
@@ -29,14 +29,14 @@ const moveSidebarMobile = keyframes`
     100% {
         width: 100%;
     }
-`
+`;
 
 export const StyledHeader = styled.header`
   position: relative; // because of Particles
   height: 15vh;
   width: 100%;
   background-color: ${(props: StyledProps) => props.theme.backgroundPrimary};
-`
+`;
 
 export const StyledNavbar = styled.nav`
   height: ${NAVBAR_HEIGHT}px;
@@ -57,7 +57,8 @@ export const StyledNavbar = styled.nav`
     `}
 
   h1 {
-    color: ${(props: StyledPropsWithIsScrolledOverHeader) => props.theme.textWhite};
+    color: ${(props: StyledPropsWithIsScrolledOverHeader) =>
+      props.theme.textWhite};
     letter-spacing: 2px;
     font-size: 28px;
     margin: 0;
@@ -67,10 +68,10 @@ export const StyledNavbar = styled.nav`
     width: calc(100% - 20px);
     padding: 0 0 0 20px;
   }
-`
+`;
 
 export const StyledItem = styled.a`
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: ${(props: StyledProps) => props.theme.textWhite};
@@ -83,9 +84,10 @@ export const StyledItem = styled.a`
 
   &:hover,
   &:focus {
-    background-color: ${(props: StyledProps) => props.theme.backgroundPrimaryHover};
+    background-color: ${(props: StyledProps) =>
+      props.theme.backgroundPrimaryHover};
   }
-`
+`;
 
 export const StyledNavbarMenu = styled.ul`
   list-style: none;
@@ -99,7 +101,7 @@ export const StyledNavbarMenu = styled.ul`
     display: flex;
     align-items: center;
   }
-`
+`;
 
 export const StyledHamburgerIcon = styled.button`
   color: ${(props: StyledProps) => props.theme.textWhite};
@@ -112,10 +114,11 @@ export const StyledHamburgerIcon = styled.button`
   &:hover,
   &:active,
   &:focus {
-    background-color: ${(props: StyledProps) => props.theme.buttonBackgroundHover};
+    background-color: ${(props: StyledProps) =>
+      props.theme.buttonBackgroundHover};
     transition: 0.4s;
   }
-`
+`;
 
 export const StyledCloseSidebarIcon = styled.button`
   color: ${(props: StyledProps) => props.theme.textWhite};
@@ -131,10 +134,11 @@ export const StyledCloseSidebarIcon = styled.button`
   &:hover,
   &:active,
   &:focus {
-    background-color: ${(props: StyledProps) => props.theme.buttonBackgroundHover};
+    background-color: ${(props: StyledProps) =>
+      props.theme.buttonBackgroundHover};
     transition: 0.4s;
   }
-`
+`;
 
 export const StyledSidebar = styled.aside`
   background-color: ${(props: StyledProps) => props.theme.backgroundSidebar};
@@ -154,7 +158,7 @@ export const StyledSidebar = styled.aside`
     animation: ${moveSidebarDesktop} 0.6s ease;
     width: 100%;
   }
-`
+`;
 
 export const StyledSidebarMenu = styled.ul`
   list-style: none;
@@ -166,7 +170,7 @@ export const StyledSidebarMenu = styled.ul`
     width: 100%;
     padding: 16px 0;
   }
-`
+`;
 
 export const StyledBanner = styled.div`
   position: absolute; // because of Particles
@@ -175,7 +179,7 @@ export const StyledBanner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const StyledBannerHeading = styled.h1`
   color: ${(props: StyledProps) => props.theme.textWhite};
@@ -194,4 +198,4 @@ export const StyledBannerHeading = styled.h1`
   @media ${CSS_MEDIA_QUERY.MIN_TABLET} {
     font-size: 3rem;
   }
-`
+`;

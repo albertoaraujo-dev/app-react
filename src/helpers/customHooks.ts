@@ -41,8 +41,9 @@ export function useWindowScrollYPosition(): number {
     return window.scrollY;
   }
 
-  const [windowScrollYPosition, setWindowScrollYPosition] =
-    useState(getPosition);
+  const [windowScrollYPosition, setWindowScrollYPosition] = useState(
+    getPosition
+  );
 
   useEffect(() => {
     function handleScroll() {
