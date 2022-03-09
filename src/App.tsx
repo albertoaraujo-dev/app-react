@@ -39,13 +39,13 @@ const App: React.FC = () => {
           <Skills />
         </StyledMain>
         <Footer />
-        <Button
+        {/* <Button
           type='theme'
           size={isMobile ? 'small' : 'normal'}
           onClick={() => setIsDarkMode(!isDarkMode)}
           iconName={isDarkMode ? faSun : faMoon}
           ariaLabel={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-        />
+        /> */}
       </>
     </ThemeProvider>
   );

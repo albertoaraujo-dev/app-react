@@ -34,7 +34,7 @@ const Navbar: React.FC<Props> = ({ toggleSidebar }: Props) => {
         </StyledHamburgerIcon>
       ) : (
         <StyledNavbarMenu>
-          <MenuItem href={`#${Section.AboutMe}`} title='Sobre mim' />
+          <MenuItem href={`#${Section.AboutMe}`} title='Quem sou' />
           <MenuItem href={`#${Section.Skills}`} title='Especialidades' />
           {/* <MenuItem href={`#${Section.Projects}`} title="Contato" /> */}
         </StyledNavbarMenu>

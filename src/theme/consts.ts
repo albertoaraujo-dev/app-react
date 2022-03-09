@@ -1,11 +1,11 @@
 // color palette
-const PRIMARY_NORMAL = '#c4bbf0';
-const PRIMARY_LIGHT = '#927fbf';
-const SECONDARY_NORMAL = '#4f3b78';
+const PRIMARY_NORMAL = '#363b4e'; //'#c4bbf0';
+const PRIMARY_LIGHT = '#363b4e';
+const SECONDARY_NORMAL = '#c4bbf0'; //'#4f3b78';
 const INK_LIGHT = '#505568';
 const INK_NORMAL = '#363b4e';
-const CLOUD_NORMAL = '#eff2f5';
-const CLOUD_DARK = '#e2e6ea';
+const CLOUD_NORMAL = '#eff2f5'; //'#c4bbf0';
+const CLOUD_DARK = '#363b4e'; //'#e2e6ea';
 const SHADOW_COLOR_DARK = 'rgba(0, 0, 0, 0.3)';
 const SHADOW_COLOR_DARKER = 'rgba(0, 0, 0, 0.6)';
 
@@ -43,9 +43,11 @@ export const THEME_DARK_MODE = {
 export const MEDIA_QUERY_BREAKPOINT = {
   TABLET: 769, // px
   MOBILE_L: 496, // px
+  MOBILE_M: 360, // px
 };
 
 export const CSS_MEDIA_QUERY = {
   MIN_TABLET: `(min-width: ${MEDIA_QUERY_BREAKPOINT.TABLET}px)`,
   MIN_MOBILE_L: `(min-width: ${MEDIA_QUERY_BREAKPOINT.MOBILE_L}px)`,
+  MIN_MOBILE_M: `(min-width: ${MEDIA_QUERY_BREAKPOINT.MOBILE_L}px)`,
 };

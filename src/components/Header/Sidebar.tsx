@@ -28,7 +28,7 @@ const Sidebar: React.FC<Props> = ({ toggleSidebar }: Props) => {
       <StyledSidebarMenu>
         <MenuItem
           href={`#${Section.AboutMe}`}
-          title='Sobre mim'
+          title='Quem sou'
           onClick={toggleSidebar}
         />
         <MenuItem

@@ -39,7 +39,7 @@ export default createGlobalStyle`
 	/* Scroll-bar Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #4f3b78 #c4bbf0;
+  scrollbar-color: #363b4e #c4bbf0;
 }
 
 /* Scroll-bar Works on Chrome, Edge, and Safari */
@@ -48,12 +48,12 @@ export default createGlobalStyle`
 }
 
 *::-webkit-scrollbar-track {
-  background: #c4bbf0;
+  background: #eff2f5;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #4f3b78;
-  border-radius: 20px;
+  background-color: #363b4e;
+  //border-radius: 20px;
   
 }
 `;

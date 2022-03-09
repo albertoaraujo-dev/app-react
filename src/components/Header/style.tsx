@@ -33,9 +33,12 @@ const moveSidebarMobile = keyframes`
 
 export const StyledHeader = styled.header`
   position: relative; // because of Particles
-  height: 15vh;
+  height: 30vh;
   width: 100%;
   background-color: ${(props: StyledProps) => props.theme.backgroundPrimary};
+  /* @media ${CSS_MEDIA_QUERY.MIN_MOBILE_L} {
+    height: 40vh;
+  } */
 `;
 
 export const StyledNavbar = styled.nav`
@@ -173,7 +176,7 @@ export const StyledSidebarMenu = styled.ul`
 `;
 
 export const StyledBanner = styled.div`
-  position: absolute; // because of Particles
+  //position: absolute; // because of Particles
   height: 15vh;
   width: 100%;
   display: flex;
